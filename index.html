@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анатолий Агамерзаев - Веб-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <svg style="display: none;">
+        <symbol id="logo-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="#4a6cf7" opacity="0.1"/>
+            <circle cx="50" cy="50" r="35" fill="none" stroke="#4a6cf7" stroke-width="3"/>
+            <circle cx="50" cy="50" r="20" fill="#4a6cf7"/>
+            <circle cx="75" cy="30" r="8" fill="#4a6cf7"/>
+            <circle cx="75" cy="70" r="8" fill="#4a6cf7"/>
+            <circle cx="30" cy="30" r="8" fill="#4a6cf7"/>
+            <circle cx="30" cy="70" r="8" fill="#4a6cf7"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="30" height="30">
+                    <use href="#logo-icon"></use>
+                </svg>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Привет, я <span class="highlight">Анатолий Агамерзаев</span></h1>
+                <h2>Студент СПбГУАП и веб-разработчик</h2>
+                <p>Создаю современные и адаптивные сайты. Учусь в университете, развиваюсь в IT-сфере и готов к новым вызовам.</p>
+                <a href="#projects" class="btn">Мои работы</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/myphoto.jpg" alt="Анатолий Агамерзаев" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Мой путь в IT</h3>
+                    <p>Я - опытный программист, могу создавать как сайты для мелких бизнесов, так и работать над крупными проектами для компаний-гигантов. С программированием познакомился в 10 лет, создавая сайты-открытки для друзей и родных.</p>
+                    
+                    <p>Сейчас я студент, увлекаюсь веб-разработкой. Начал с основ HTML и CSS, затем изучил JavaScript. Активно практикуюсь в создании сайтов и изучаю React для более сложных проектов.</p>
+                    
+                    <p>Моя цель - начать сотрудничество с большими IT-компаниями, где смогу применять свои навыки и учиться у профессионалов. Готов к сложным задачам и постоянному развитию в сфере информационных технологий.</p>
+                    
+                    <div class="skills">
+                        <h3>Мои навыки</h3>
+                        <div class="skill">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level html">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level js">75%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-level react">40%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-level git">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <p class="section-subtitle">Вот некоторые из моих работ</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Интернет-магазин</h3>
+                        <p>Учебный проект интернет-магазина с корзиной товаров и фильтрацией.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <a href="https://github.com/2Tizer" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Todo-приложение</h3>
+                        <p>Приложение для управления задачами с локальным хранилищем и тегами.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <a href="https://github.com/2Tizer" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Приложение погоды</h3>
+                        <p>Виджет погоды с использованием API, геолокацией и прогнозом.</p>
+                        <div class="project-tech">
+                            <span>API</span>
+                            <span>JavaScript</span>
+                            <span>Async/Await</span>
+                        </div>
+                        <a href="https://github.com/2Tizer" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Браузерная игра</h3>
+                        <p>Классическая игра "Змейка" на JavaScript с системой рекордов.</p>
+                        <div class="project-tech">
+                            <span>Canvas</span>
+                            <span>JavaScript</span>
+                            <span>OOP</span>
+                        </div>
+                        <a href="https://github.com/2Tizer" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Свяжитесь со мной</h3>
+                    <p>Готов к сотрудничеству и новым проектам!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <a href="tel:+79052590099">+7 (905) 259-00-99</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:tolikagamerzaev@yandex.ru">tolikagamerzaev@yandex.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Локация</h4>
+                                <span>Санкт-Петербург, Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social">
+                        <h4>Социальные сети</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/2Tizer" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://t.me/tizer55" target="_blank" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="mailto:tolikagamerzaev@yandex.ru" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form id="feedback-form" method="POST" action="#">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="50" height="50">
+                        <use href="#logo-icon"></use>
+                    </svg>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Главная</a>
+                    <a href="#about">Обо мне</a>
+                    <a href="#projects">Проекты</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/2Tizer" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/tizer55" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear">2024</span> Анатолий Агамерзаев. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
